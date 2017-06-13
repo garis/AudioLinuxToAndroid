@@ -1,4 +1,0 @@
-install pyaudio
-sudo pacman -S alsa-utils 
-
-modprobe snd-aloop

@@ -13,7 +13,7 @@ import java.net.SocketTimeoutException;
 
 public class MainActivity extends AppCompatActivity {
 
-    public static int bufferLength=1024*4;
+    public static int bufferLength=1152*4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         public void initialize() {
             int bufferSize=bufferLength/4;
             audioTrack = new AudioTrack(AudioManager.STREAM_MUSIC,
-                    48000,
+                    44100,
                     AudioFormat.CHANNEL_OUT_STEREO,
                     AudioFormat.ENCODING_PCM_16BIT,
                     bufferSize,
